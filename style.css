@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+      font-family: "EB Garamond", serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f9f9f9;
+  }
+  
+  header, footer {
+      background-color: #feae00;
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+      color:black;
+      box-sizing: border-box;
+  }
+  
+  /* <main> deve ocupar duas vezes mais espaço do que o item irmão */
+  main {
+      background-color: #fff;
+      padding: 20px;
+      flex: 2;
+  }
+  
+  #lateral {
+      background-color: #212026;
+      color: #fff;
+      padding: 30px;
+      flex: 1;
+  }
+  
+  #alinhamento {
+      display: flex;
+      flex-wrap: wrap;
+      /* gap: 20px; */
+      /* margin: 20px; */
+  }
+  
+  /* card  */
+  #perfil {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      /* margin-bottom: 20px; */
+  }
+  
+  .icons {
+      width: 20px;
+      margin-right: 8px;
+      vertical-align: middle;
+  }
+  
+  /* hover nos links de portfólio */
+  a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s, transform 0.3s;
+  }
+  
+  a:hover {
+      color: yellow;
+      transform: scale(1.05);
+  }
+  
+  /* progresso bar estilizado */
+  progress {
+      width: 80%;
+      height: 16px;
+      border-radius: 8px;
+      overflow: hidden;
+      vertical-align: middle;
+  }
+  progress::-webkit-progress-bar {
+      background-color: #737161;
+      border-radius: 8px;
+  }
+  progress::-webkit-progress-value {
+      background-color: #4650d8;
+      border-radius: 8px;
+  }
+  
+  /* responsividade simples */
+  @media screen and (max-width: 768px) {
+      #alinhamento {
+          flex-direction: column;
+      }
+  
+      main, #lateral {
+          width: 100%;
+      }
+  
+      header, footer {
+          padding: 15px;
+      }
+  }
+  
+  /* linha de informações sobre cargo */
+  .info-inline {
+      margin-left: 50px;
+      font-weight: normal;
+      font-size: 0.9em;
+      display: inline-block;
+  }
